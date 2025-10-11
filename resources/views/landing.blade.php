@@ -4,5 +4,5 @@
     <x-hero />
     <x-about />
     <x-projects />
-    <x-contact />
+    <x-social-networks />
 @endsection

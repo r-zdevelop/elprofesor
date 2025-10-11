@@ -11,7 +11,7 @@
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
                 <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
-                <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="#social-networks" class="text-gray-700 hover:text-blue-600">Social Networks</a>
             </div>
 
             <!-- Mobile Menu Button -->
