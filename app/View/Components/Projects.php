@@ -37,56 +37,21 @@ class Projects extends Component
         return [
             [
                 'title' => 'GymWorld',
-                'type' => 'WordPress Website',
+                'type' => 'WordPress',
                 'url' => 'https://gymworld.elprofesor.dev',
-                'description' => 'A dynamic fitness website built with WordPress that demonstrates advanced theme development techniques and dynamic content management.',
-                'course_description' => 'This project showcases the practical application of converting static designs into fully functional WordPress websites with dynamic content, custom functionality, and optimized performance.',
+                'project_duration' => '4 weeks',
+                'description' => 'A comprehensive fitness website built with WordPress, featuring dynamic content management, custom theme development, and advanced WordPress functionality.',
+                'course_description' => 'This project demonstrates the practical application of converting static designs into fully functional WordPress websites, showcasing mastery of WordPress theme hierarchy and dynamic content management.',
                 'technologies' => [
                     'WordPress',
                     'PHP',
-                    'HTML/CSS',
+                    'HTML5',
+                    'CSS3',
                     'JavaScript',
-                    'Advanced Custom Fields',
-                    'Custom Post Types'
+                    'MySQL',
+                    'Custom Themes',
+                    'Plugin Development'
                 ],
-                'features' => [
-                    'Dynamic Content Management',
-                    'Custom Post Types for Classes & Trainers',
-                    'Advanced Custom Fields Integration',
-                    'Dynamic Menu System',
-                    'Blog with Search & Filtering',
-                    'Responsive Design',
-                    'Performance Optimization',
-                    'SEO Optimization',
-                    'Contact Forms & Booking System'
-                ],
-                'key_highlights' => [
-                    'Converted from static HTML/CSS/JS to dynamic WordPress',
-                    'Custom theme development following WordPress hierarchy',
-                    'Dynamic content for classes, trainers, and schedules',
-                    'Integrated booking and contact functionality',
-                    'Optimized for speed and search engines',
-                    'Mobile-responsive design',
-                    'Easy content management for gym owners'
-                ],
-                'development_approach' => [
-                    'Static Design Analysis',
-                    'WordPress Theme Structure Planning',
-                    'Custom Post Types Implementation',
-                    'Advanced Custom Fields Setup',
-                    'Dynamic Content Integration',
-                    'Performance Optimization',
-                    'Testing & Deployment'
-                ],
-                'project_duration' => 'Completed as part of comprehensive WordPress course',
-                'client_benefits' => 'Easy content management, dynamic updates, professional appearance',
-                'technical_achievements' => [
-                    'Successfully converted static design to dynamic WordPress site',
-                    'Implemented custom functionality without heavy plugins',
-                    'Achieved fast loading times and good performance',
-                    'Created user-friendly admin interface',
-                    'Deployed to production with proper optimization'
-                ]
             ]
         ];
     }
