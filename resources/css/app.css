@@ -14,3 +14,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Guide page styles */
+pre code {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Smooth scrolling for anchor links */
+section {
+  scroll-margin-top: 80px;
+}
+
