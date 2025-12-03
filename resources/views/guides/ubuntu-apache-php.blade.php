@@ -317,9 +317,13 @@ sudo systemctl restart apache2</code></pre>
                 <button onclick="copyCode(this)" class="absolute top-2 right-2 bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity">
                     Copy
                 </button>
-                <pre class="text-gray-100 text-sm"><code>chmod +x ~/
-chmod 755 ~/Sites
-mkdir -p ~/Sites</code></pre>
+                <pre class="text-gray-100 text-sm">
+                    <code>
+                        chmod +x ~/
+                        mkdir -p ~/Sites    
+                        chmod 755 ~/Sites
+                    </code>
+                </pre>
             </div>
             <div class="mt-3 text-sm text-gray-600 space-y-1">
                 <p><strong>What this does:</strong></p>

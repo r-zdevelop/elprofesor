@@ -9,10 +9,10 @@
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
-                <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="/#about" class="text-gray-700 hover:text-blue-600">About</a>
+                <a href="/#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
                 <a href="{{ route('guide.ubuntu-apache-php') }}" class="text-gray-700 hover:text-blue-600">Guides</a>
-                <a href="#social-networks" class="text-gray-700 hover:text-blue-600">Social Networks</a>
+                <a href="/#social-networks" class="text-gray-700 hover:text-blue-600">Social Networks</a>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -30,9 +30,9 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
-        <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
-        <a href="#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
+        <a href="/#about" class="block text-gray-700 hover:text-blue-600">About</a>
+        <a href="/#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
         <a href="{{ route('guide.ubuntu-apache-php') }}" class="block text-gray-700 hover:text-blue-600">Guides</a>
-        <a href="#social-networks" class="block text-gray-700 hover:text-blue-600">Social Networks</a>
+        <a href="/#social-networks" class="block text-gray-700 hover:text-blue-600">Social Networks</a>
     </div>
 </nav>
