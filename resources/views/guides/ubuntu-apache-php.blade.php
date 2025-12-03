@@ -16,6 +16,28 @@
         <p class="text-gray-700">Everything you need to develop PHP projects in <code class="bg-gray-200 px-2 py-1 rounded text-sm">~/Sites</code> with instant switching between PHP 7.0 → 8.4, exactly like the famous macOS <code class="bg-gray-200 px-2 py-1 rounded text-sm">sphp</code> script — but working perfectly on Ubuntu 24.04.</p>
     </div>
 
+    <!-- Warning Box -->
+    <div class="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8 rounded-r-lg">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg class="h-6 w-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+            </div>
+            <div class="ml-3">
+                <h3 class="text-lg font-bold text-orange-900 mb-2">⚠️ For the Brave Souls Only!</h3>
+                <p class="text-orange-900 mb-2">This guide is for developers who aren't afraid to get their hands dirty with the Linux terminal. You'll be:</p>
+                <ul class="list-disc ml-5 space-y-1 text-orange-900">
+                    <li>Running commands with <code class="bg-orange-100 px-2 py-1 rounded text-sm">sudo</code> (root access)</li>
+                    <li>Editing system configuration files</li>
+                    <li>Installing and configuring server software</li>
+                    <li>Potentially breaking things (so have a backup plan!)</li>
+                </ul>
+                <p class="text-orange-900 mt-3 font-semibold">If you're comfortable with the terminal or willing to learn, dive in! If not, maybe stick to Docker or a VM for now.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Final Result Box -->
     <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
         <h3 class="text-lg font-bold text-blue-900 mb-3">Final Result You Will Have</h3>
@@ -473,6 +495,13 @@ for v in 8.3 8.2 8.1 7.4; do sudo sphp $v; done</code></pre>
         <h3 class="text-xl font-bold text-green-900 mb-2">You're done! 🎉</h3>
         <p class="text-green-900">You now have the perfect, rock-solid multiple-PHP development environment on Ubuntu 24.04 — exactly like the famous macOS setup, but actually working.</p>
         <p class="text-green-900 mt-2 font-semibold">Enjoy coding!</p>
+    </div>
+
+    <!-- Credits -->
+    <div class="bg-gray-50 border-l-4 border-gray-400 p-6 mt-8 rounded-r-lg">
+        <h3 class="text-lg font-bold text-gray-900 mb-2">📚 Credits & Inspiration</h3>
+        <p class="text-gray-700">This guide was inspired by and adapted from the excellent <a href="https://getgrav.org/blog/macos-sequoia-apache-multiple-php-versions" class="text-blue-600 hover:text-blue-800 underline font-semibold" target="_blank" rel="noopener">macOS Sequoia Apache Multiple PHP Versions</a> guide from the Grav CMS team.</p>
+        <p class="text-gray-700 mt-2">I've translated and adapted their approach to work perfectly on Ubuntu 24.04, adding beginner-friendly explanations for those new to Linux.</p>
     </div>
 
     <!-- Back to top -->
