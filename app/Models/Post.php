@@ -14,6 +14,7 @@ class Post extends Model
         'excerpt',
         'content',
         'featured_image',
+        'user_id',
         'category_id',
         'status',
         'published_at',
@@ -25,6 +26,11 @@ class Post extends Model
     protected $casts = [
         'published_at' => 'datetime',
     ];
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function category(): BelongsTo
     {
