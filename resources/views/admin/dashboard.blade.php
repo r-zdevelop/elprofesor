@@ -8,7 +8,7 @@
 
     <!-- Stats Grid -->
     <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 mb-8">
-        <div class="bg-white overflow-hidden shadow rounded-lg">
+        <div class="overflow-hidden shadow rounded-lg" style="background-color: var(--color-beige);">
             <div class="p-5">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class="bg-white overflow-hidden shadow rounded-lg">
+        <div class="overflow-hidden shadow rounded-lg" style="background-color: var(--color-beige);">
             <div class="p-5">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="bg-white overflow-hidden shadow rounded-lg">
+        <div class="overflow-hidden shadow rounded-lg" style="background-color: var(--color-beige);">
             <div class="p-5">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="bg-white overflow-hidden shadow rounded-lg">
+        <div class="overflow-hidden shadow rounded-lg" style="background-color: var(--color-beige);">
             <div class="p-5">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
@@ -80,7 +80,7 @@
             </div>
         </div>
 
-        <div class="bg-white overflow-hidden shadow rounded-lg">
+        <div class="overflow-hidden shadow rounded-lg" style="background-color: var(--color-beige);">
             <div class="p-5">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
@@ -100,22 +100,26 @@
     </div>
 
     <!-- Quick Actions -->
-    <div class="bg-white shadow rounded-lg p-6 mb-8">
+    <div class="shadow rounded-lg p-6 mb-8" style="background-color: var(--color-beige);">
         <h2 class="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h2>
         <div class="flex flex-wrap gap-4">
             <a href="{{ route('admin.posts.create') }}"
-               class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+               class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white transition-opacity duration-200"
+               style="background-color: var(--color-blue);"
+               onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
                 Create New Post
             </a>
             <a href="{{ route('admin.projects.create') }}"
-               class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+               class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white transition-opacity duration-200"
+               style="background-color: var(--color-blue);"
+               onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
                 Create New Project
             </a>
         </div>
     </div>
 
     <!-- Recent Posts -->
-    <div class="bg-white shadow rounded-lg p-6 mb-8">
+    <div class="shadow rounded-lg p-6 mb-8" style="background-color: var(--color-beige);">
         <h2 class="text-lg font-semibold text-gray-900 mb-4">Recent Posts</h2>
         <div class="overflow-hidden">
             <table class="min-w-full divide-y divide-gray-200">
@@ -151,14 +155,14 @@
             </table>
         </div>
         <div class="mt-4">
-            <a href="{{ route('admin.posts.index') }}" class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">
+            <a href="{{ route('admin.posts.index') }}" class="text-sm font-medium transition-opacity duration-200" style="color: var(--color-blue);" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
                 View all posts →
             </a>
         </div>
     </div>
 
     <!-- Recent Projects -->
-    <div class="bg-white shadow rounded-lg p-6">
+    <div class="shadow rounded-lg p-6" style="background-color: var(--color-beige);">
         <h2 class="text-lg font-semibold text-gray-900 mb-4">Recent Projects</h2>
         <div class="overflow-hidden">
             <table class="min-w-full divide-y divide-gray-200">
@@ -192,7 +196,7 @@
             </table>
         </div>
         <div class="mt-4">
-            <a href="{{ route('admin.projects.index') }}" class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">
+            <a href="{{ route('admin.projects.index') }}" class="text-sm font-medium transition-opacity duration-200" style="color: var(--color-blue);" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
                 View all projects →
             </a>
         </div>

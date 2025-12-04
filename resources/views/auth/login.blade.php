@@ -6,7 +6,7 @@
     <title>Login - {{ config('app.name') }}</title>
     @vite('resources/css/app.css')
 </head>
-<body class="bg-gray-100">
+<body style="background-color: var(--color-cream);">
     <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8">
             <div>
@@ -24,7 +24,8 @@
                                type="email"
                                autocomplete="email"
                                required
-                               class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm @error('email') border-red-500 @enderror"
+                               class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:z-10 sm:text-sm @error('email') border-red-500 @enderror"
+                               style="focus:ring-color: var(--color-blue); focus:border-color: var(--color-blue);"
                                placeholder="Email address"
                                value="{{ old('email') }}">
                     </div>
@@ -35,7 +36,8 @@
                                type="password"
                                autocomplete="current-password"
                                required
-                               class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm @error('password') border-red-500 @enderror"
+                               class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:z-10 sm:text-sm @error('password') border-red-500 @enderror"
+                               style="focus:ring-color: var(--color-blue); focus:border-color: var(--color-blue);"
                                placeholder="Password">
                     </div>
                 </div>
@@ -60,14 +62,16 @@
 
                 <div>
                     <button type="submit"
-                            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 transition-opacity duration-200"
+                            style="background-color: var(--color-blue);"
+                            onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
                         Sign in
                     </button>
                 </div>
             </form>
 
             <div class="text-center">
-                <a href="{{ url('/') }}" class="text-sm text-indigo-600 hover:text-indigo-500">
+                <a href="{{ url('/') }}" class="text-sm transition-colors duration-200" style="color: var(--color-blue);" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
                     Back to website
                 </a>
             </div>
