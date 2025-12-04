@@ -18,8 +18,6 @@ Route::get('/guides/ubuntu-apache-php', function () {
 Route::middleware('guest')->group(function () {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [LoginController::class, 'login']);
-    Route::get('/setup-password', [LoginController::class, 'showPasswordSetup'])->name('password.setup');
-    Route::post('/setup-password', [LoginController::class, 'setupPassword']);
 });
 
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
