@@ -9,7 +9,7 @@
         :create-route="route('admin.posts.create')"
         create-label="Create Post" />
 
-    <div class="shadow overflow-hidden sm:rounded-md bg-accent">
+    <div class="bg-white shadow-lg overflow-hidden rounded-xl border border-gray-100">
         <ul class="divide-y divide-gray-200">
             @forelse($posts as $post)
                 <x-admin.list-item
