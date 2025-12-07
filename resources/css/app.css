@@ -9,16 +9,26 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 
-    /* Color Palette */
-    --color-primary: #8ecae6;
-    --color-secondary: #219ebc;
-    --color-dark: #023047;
-    --color-accent: #ffb703;
-    --color-accent-alt: #fb8500;
+    /* Ocean-Inspired Color Palette */
+    --color-primary: #8ecae6;      /* Sky Blue - subtle accents */
+    --color-secondary: #219ebc;    /* Ocean Blue - primary actions */
+    --color-dark: #023047;         /* Deep Blue - text & contrast */
+    --color-accent: #ffb703;       /* Amber - highlights */
+    --color-accent-alt: #fb8500;   /* Orange - special CTAs */
+
+    /* Neutral shades for backgrounds */
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-dark);
 }
 
 /* Guide page styles */
@@ -50,6 +60,8 @@ section {
 .bg-dark { background-color: var(--color-dark); }
 .bg-accent { background-color: var(--color-accent); }
 .bg-accent-alt { background-color: var(--color-accent-alt); }
+.bg-gray-50 { background-color: var(--color-gray-50); }
+.bg-gray-100 { background-color: var(--color-gray-100); }
 
 /* Border Colors */
 .border-primary { border-color: var(--color-primary); }
@@ -70,4 +82,42 @@ section {
 .hover\:text-dark:hover { color: var(--color-dark); }
 .hover\:text-accent:hover { color: var(--color-accent); }
 .hover\:text-accent-alt:hover { color: var(--color-accent-alt); }
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--color-secondary);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 48, 71, 0.3);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent-alt);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 133, 0, 0.3);
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 30px rgba(2, 48, 71, 0.15);
+  transform: translateY(-4px);
+}
 

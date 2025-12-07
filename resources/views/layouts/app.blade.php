@@ -6,7 +6,7 @@
     <title>{{ config('app.name', 'My Portfolio') }}</title>
     @vite('resources/css/app.css')
 </head>
-<body class="text-gray-900 bg-primary">
+<body class="text-gray-900 bg-white">
     <x-navbar />
 
     <main class="container mx-auto p-6">
