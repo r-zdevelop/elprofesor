@@ -29,16 +29,16 @@
 
             <!-- Submit -->
             <button type="submit"
-                    class="w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                    class="w-full md:w-auto px-6 py-3 bg-secondary text-white rounded-lg hover:bg-dark transition-colors duration-200">
                 Send Message
             </button>
         </form>
 
         <!-- Social Links -->
         <div class="mt-12 flex justify-center space-x-6">
-            <a href="mailto:your@email.com" class="text-gray-600 hover:text-blue-600">Email</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-gray-600 hover:text-blue-600">LinkedIn</a>
-            <a href="https://github.com/yourusername" target="_blank" class="text-gray-600 hover:text-blue-600">GitHub</a>
+            <a href="mailto:your@email.com" class="text-gray-600 hover:text-secondary transition-colors duration-200">Email</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-gray-600 hover:text-secondary transition-colors duration-200">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank" class="text-gray-600 hover:text-secondary transition-colors duration-200">GitHub</a>
         </div>
     </div>
 </section>

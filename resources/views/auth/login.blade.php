@@ -6,7 +6,7 @@
     <title>Login - {{ config('app.name') }}</title>
     @vite('resources/css/app.css')
 </head>
-<body style="background-color: var(--color-cream);">
+<body class="bg-primary">
     <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8">
             <div>
@@ -62,16 +62,14 @@
 
                 <div>
                     <button type="submit"
-                            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 transition-opacity duration-200"
-                            style="background-color: var(--color-blue);"
-                            onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+                            class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-secondary hover:bg-dark focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-200">
                         Sign in
                     </button>
                 </div>
             </form>
 
             <div class="text-center">
-                <a href="{{ url('/') }}" class="text-sm transition-colors duration-200" style="color: var(--color-blue);" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                <a href="{{ url('/') }}" class="text-sm text-secondary hover:text-dark transition-colors duration-200">
                     Back to website
                 </a>
             </div>

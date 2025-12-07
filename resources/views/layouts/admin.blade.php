@@ -6,13 +6,13 @@
     <title>@yield('title', 'Admin') - {{ config('app.name') }}</title>
     @vite('resources/css/app.css')
 </head>
-<body style="background-color: var(--color-cream);">
-    <nav class="shadow-lg" style="background-color: var(--color-beige);">
+<body class="bg-primary">
+    <nav class="shadow-lg bg-accent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="{{ route('admin.dashboard') }}" class="text-xl font-bold" style="color: var(--color-blue);">
+                        <a href="{{ route('admin.dashboard') }}" class="text-xl font-bold text-secondary">
                             Admin Panel
                         </a>
                     </div>

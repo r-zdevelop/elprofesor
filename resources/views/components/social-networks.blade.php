@@ -1,4 +1,4 @@
-<section id="social-networks" class="py-20" style="background-color: var(--color-light-blue);">
+<section id="social-networks" class="py-20 bg-primary">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
         <!-- Title -->
@@ -12,8 +12,7 @@
             @foreach($networks as $network)
             <a href="{{ $network['url'] }}"
                 target="{{ str_starts_with($network['url'], 'mailto:') ? '_self' : '_blank' }}"
-                class="group rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
-                style="background-color: var(--color-beige);"
+                class="bg-accent group rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 aria-label="{{ $network['description'] }}">
 
                 <!-- Icon -->
@@ -51,7 +50,7 @@
                 </div>
 
                 <!-- Network Name -->
-                <h3 class="text-lg font-semibold text-gray-900 transition-colors duration-300 group-hover-target" onmouseover="this.style.color='var(--color-blue)'" onmouseout="this.style.color=''">
+                <h3 class="text-lg font-semibold text-gray-900 hover:text-secondary transition-colors duration-300">
                     {{ $network['name'] }}
                 </h3>
 

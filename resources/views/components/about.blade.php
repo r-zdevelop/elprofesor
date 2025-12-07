@@ -1,4 +1,4 @@
-<section id="about" class="py-20" style="background-color: var(--color-beige);">
+<section id="about" class="py-20 bg-accent">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-12 items-center">
 
@@ -14,7 +14,7 @@
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
                 <p class="text-gray-600 leading-relaxed mb-6">
                     Hi 👋 I'm <span class="font-semibold">Regynald Zambrano</span>,
-                    a passionate <span class="font-semibold" style="color: var(--color-blue);">Full-Stack Developer</span>
+                    a passionate <span class="font-semibold text-secondary">Full-Stack Developer</span>
                     with experience in building web applications using
                     <strong>Laravel, React, and modern frontend technologies</strong>.
                 </p>
@@ -27,11 +27,11 @@
 
                 <!-- Skills List -->
                 <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 rounded-full text-sm text-gray-700" style="background-color: var(--color-light-blue);">Laravel</span>
-                    <span class="px-4 py-2 rounded-full text-sm text-gray-700" style="background-color: var(--color-light-blue);">React</span>
-                    <span class="px-4 py-2 rounded-full text-sm text-gray-700" style="background-color: var(--color-light-blue);">JavaScript</span>
-                    <span class="px-4 py-2 rounded-full text-sm text-gray-700" style="background-color: var(--color-light-blue);">PHP</span>
-                    <span class="px-4 py-2 rounded-full text-sm text-gray-700" style="background-color: var(--color-light-blue);">UI/UX Design</span>
+                    <span class="px-4 py-2 rounded-full text-sm text-gray-700 bg-primary">Laravel</span>
+                    <span class="px-4 py-2 rounded-full text-sm text-gray-700 bg-primary">React</span>
+                    <span class="px-4 py-2 rounded-full text-sm text-gray-700 bg-primary">JavaScript</span>
+                    <span class="px-4 py-2 rounded-full text-sm text-gray-700 bg-primary">PHP</span>
+                    <span class="px-4 py-2 rounded-full text-sm text-gray-700 bg-primary">UI/UX Design</span>
                 </div>
             </div>
         </div>

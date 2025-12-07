@@ -3,9 +3,9 @@
         <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Featured Project</h2>
         
         @foreach($projects as $project)
-        <div class="rounded-2xl shadow-xl overflow-hidden" style="background-color: var(--color-beige);">
+        <div class="rounded-2xl shadow-xl overflow-hidden bg-accent">
             <!-- Project Header -->
-            <div class="px-8 py-12 text-white" style="background: linear-gradient(to right, var(--color-blue), #8B7BC7);">
+            <div class="px-8 py-12 text-white bg-secondary">
                 <div class="flex items-center justify-between">
                     <div>
                         <h3 class="text-3xl font-bold mb-2">{{ $project->title }}</h3>
@@ -19,7 +19,7 @@
                         @endif
                         @if($project->url)
                         <div>
-                            <a href="{{ $project->url }}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg font-semibold transition-colors duration-300 flex items-center" style="background-color: var(--color-cream); color: var(--color-blue);" onmouseover="this.style.backgroundColor='var(--color-beige)'" onmouseout="this.style.backgroundColor='var(--color-cream)'">
+                            <a href="{{ $project->url }}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg font-semibold bg-primary hover:bg-accent text-secondary transition-colors duration-300 flex items-center">
                                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                 </svg>
@@ -51,14 +51,14 @@
                         <!-- Technologies -->
                         <div>
                             <h4 class="text-lg font-semibold mb-3 text-gray-900 flex items-center">
-                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: var(--color-blue);">
+                                <svg class="w-5 h-5 mr-2 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                                 </svg>
                                 Technologies Used
                             </h4>
                             <div class="flex flex-wrap gap-2">
                                 @foreach($project->technologies as $tech)
-                                <span class="px-3 py-1 rounded-full text-sm font-medium" style="background-color: var(--color-light-blue); color: var(--color-blue);">{{ $tech->name }}</span>
+                                <span class="px-3 py-1 rounded-full text-sm font-medium bg-primary text-secondary">{{ $tech->name }}</span>
                                 @endforeach
                             </div>
                         </div>

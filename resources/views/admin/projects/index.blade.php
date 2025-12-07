@@ -7,14 +7,12 @@
     <div class="flex justify-between items-center mb-6">
         <h1 class="text-3xl font-bold text-gray-900">Projects</h1>
         <a href="{{ route('admin.projects.create') }}"
-           class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white transition-opacity duration-200"
-           style="background-color: var(--color-blue);"
-           onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+           class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-secondary hover:bg-dark transition-colors duration-200">
             Create Project
         </a>
     </div>
 
-    <div class="shadow overflow-hidden sm:rounded-md" style="background-color: var(--color-beige);">
+    <div class="shadow overflow-hidden sm:rounded-md bg-accent">
         <ul class="divide-y divide-gray-200">
             @forelse($projects as $project)
                 <li>
@@ -22,7 +20,7 @@
                         <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
                             <div class="truncate">
                                 <div class="flex text-sm">
-                                    <p class="font-medium truncate" style="color: var(--color-blue);">{{ $project->title }}</p>
+                                    <p class="font-medium truncate text-secondary">{{ $project->title }}</p>
                                     <p class="ml-1 flex-shrink-0 font-normal text-gray-500">
                                         - {{ $project->type }}
                                     </p>
@@ -45,9 +43,7 @@
                                         {{ $project->is_active ? 'Active' : 'Inactive' }}
                                     </span>
                                     <a href="{{ route('admin.projects.edit', $project) }}"
-                                       class="text-sm font-medium transition-opacity duration-200"
-                                       style="color: var(--color-blue);"
-                                       onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                                       class="text-sm font-medium text-secondary hover:text-dark transition-colors duration-200">
                                         Edit
                                     </a>
                                     <form action="{{ route('admin.projects.destroy', $project) }}" method="POST" class="inline"
@@ -65,7 +61,7 @@
                 </li>
             @empty
                 <li class="px-4 py-8 text-center text-gray-500">
-                    No projects yet. <a href="{{ route('admin.projects.create') }}" class="transition-opacity duration-200" style="color: var(--color-blue);" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Create one now</a>
+                    No projects yet. <a href="{{ route('admin.projects.create') }}" class="text-secondary hover:text-dark transition-colors duration-200">Create one now</a>
                 </li>
             @endforelse
         </ul>
