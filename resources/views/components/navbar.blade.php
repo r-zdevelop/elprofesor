@@ -13,7 +13,7 @@
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="/#about" class="text-gray-700 hover:text-secondary font-medium transition-colors duration-200">About</a>
                 <a href="/#projects" class="text-gray-700 hover:text-secondary font-medium transition-colors duration-200">Projects</a>
-                <a href="{{ route('guide.ubuntu-apache-php') }}" class="text-gray-700 hover:text-secondary font-medium transition-colors duration-200">Guides</a>
+                <a href="{{ route('guides.index') }}" class="text-gray-700 hover:text-secondary font-medium transition-colors duration-200">Guides</a>
                 <a href="/#social-networks" class="px-4 py-2 bg-secondary text-white rounded-lg hover:bg-dark transition-all duration-200">
                     Contact
                 </a>

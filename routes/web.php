@@ -10,9 +10,17 @@ Route::get('/', function () {
     return view('landing');
 });
 
+Route::get('/guides', function () {
+    return view('guides.index');
+})->name('guides.index');
+
 Route::get('/guides/ubuntu-apache-php', function () {
     return view('guides.ubuntu-apache-php');
 })->name('guide.ubuntu-apache-php');
+
+Route::get('/guides/ubuntu-mysql-vhost-apu', function () {
+    return view('guides.ubuntu-mysql-vhost-apu');
+})->name('guide.ubuntu-mysql-vhost-apu');
 
 // Authentication Routes
 Route::middleware('guest')->group(function () {

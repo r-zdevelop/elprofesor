@@ -492,9 +492,53 @@ for v in 8.3 8.2 8.1 7.4; do sudo sphp $v; done</code></pre>
 
     <!-- Conclusion -->
     <div class="bg-green-50 border-l-4 border-green-500 p-6 mt-12 rounded-r-lg">
-        <h3 class="text-xl font-bold text-green-900 mb-2">You're done! 🎉</h3>
+        <h3 class="text-xl font-bold text-green-900 mb-2">You're done with Part 1! 🎉</h3>
         <p class="text-green-900">You now have the perfect, rock-solid multiple-PHP development environment on Ubuntu 24.04 — exactly like the famous macOS setup, but actually working.</p>
-        <p class="text-green-900 mt-2 font-semibold">Enjoy coding!</p>
+        <p class="text-green-900 mt-3 font-semibold">Ready to take it further?</p>
+    </div>
+
+    <!-- Next Steps - Part 2 -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mt-8 rounded-r-lg">
+        <h3 class="text-xl font-bold text-blue-900 mb-3">🚀 Continue to Part 2</h3>
+        <p class="text-blue-900 mb-4">Complete your professional PHP development setup with:</p>
+        <ul class="space-y-2 text-blue-900 mb-4">
+            <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                MySQL/MariaDB with phpMyAdmin or Adminer
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Wildcard <code class="bg-blue-100 px-2 py-1 rounded">*.test</code> virtual hosts
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Xdebug debugging with easy toggle
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                APCu cache for 5X faster performance
+            </li>
+            <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Native YAML support
+            </li>
+        </ul>
+        <a href="{{ route('guide.ubuntu-mysql-vhost-apu') }}" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+            Continue to Part 2: MySQL, Virtual Hosts & Xdebug
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+        </a>
     </div>
 
     <!-- Credits -->
