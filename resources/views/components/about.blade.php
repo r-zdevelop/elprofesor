@@ -1,16 +1,6 @@
 <section id="about" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-
-            <!-- Profile Image -->
-            <div class="flex justify-center md:justify-start">
-                <div class="relative">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20"></div>
-                    <img src="{{ asset('images/profile.jpeg') }}"
-                         alt="Profile picture"
-                         class="relative w-64 h-64 rounded-2xl shadow-xl object-cover border-4 border-white">
-                </div>
-            </div>
+        <div class="grid md:grid-cols-2 gap-12 items-start">
 
             <!-- About Text -->
             <div>
@@ -85,6 +75,16 @@
                         <span class="px-3 py-1.5 rounded-lg text-xs font-medium text-secondary bg-primary/20 border border-primary/30 hover:bg-primary/30 transition-colors">Git</span>
                         <span class="px-3 py-1.5 rounded-lg text-xs font-medium text-secondary bg-primary/20 border border-primary/30 hover:bg-primary/30 transition-colors">REST APIs</span>
                     </div>
+                </div>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="flex justify-center md:justify-end">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20"></div>
+                    <img src="{{ asset('images/profile.jpeg') }}"
+                         alt="Profile picture"
+                         class="relative w-64 h-64 rounded-2xl shadow-xl object-cover border-4 border-white">
                 </div>
             </div>
         </div>
